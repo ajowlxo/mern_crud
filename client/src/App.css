@@ -1,0 +1,93 @@
+.App {
+  background-color: #f3f2f0;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+}
+
+.contactList {
+  position: relative;
+}
+.header {
+  text-align: center;
+  color: #0a66c2;
+}
+
+.userData {
+  margin: auto 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.userData > input {
+  padding: 10px;
+  outline: none;
+}
+
+.userData > button {
+  padding: 12px;
+  color: white;
+  background: #d67070;
+  border: none;
+  cursor: pointer;
+}
+
+.contactTitle {
+  color: #0a66c2;
+  margin-bottom: 10px;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact > div {
+  border-right: 2px solid gray;
+  padding-right: 5px;
+  text-transform: capitalize;
+}
+
+.deleteButton {
+  padding: 5px;
+  background-color: rgb(248, 66, 66);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.updateButton {
+  padding: 5px;
+  background-color: rgb(11, 202, 74);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.updateForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  right: 550px;
+  top: 100px;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.updateForm > input {
+  padding: 10px;
+  outline: none;
+}
