@@ -16,14 +16,14 @@ function App() {
 
   const fetchContacts = async () => {
     const response = await axios.get(
-      "http://localhost:5000/contact/getcontacts"
+      "https://phonebook-client-9jt4.onrender.com/contact/getcontacts"
     );
     setContacts(response.data);
   };
   const handleCreate = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/contact/createcontact",
+        "https://phonebook-client-9jt4.onrender.com/contact/createcontact",
         {
           name,
           email,
@@ -38,11 +38,11 @@ function App() {
     }
   };
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:5000/contact/deletecontact/${id}`);
+    await axios.delete(`https://phonebook-client-9jt4.onrender.com/contact/deletecontact/${id}`);
     fetchContacts(); // Fetch contacts again after deleting
   };
   const handleUpdate = async (id) => {
-    await axios.put(`http://localhost:5000/contact/updatecontact/${id}`, {
+    await axios.put(`https://phonebook-client-9jt4.onrender.com/contact/updatecontact/${id}`, {
       name: newName,
       email: newEmail,
     });
